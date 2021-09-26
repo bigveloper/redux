@@ -50,11 +50,11 @@
     }
     ```
 
-    -   reducer 는 현재의 state 와 전달 받은 action 을 참고하여 새로운 state 를 만들어서 반환 한다. useReducer 를 사용할 때 작성하는 reducer 와 똑같은 형태를 가지고 있다.
-    -   useReducer 에서는 일반적으로 default: 부분에 throw new Error('Unhandled Action') 과 같이 에러를 발생 시키도록 처리하는게 일반적이나, redux 의 reduce 에서는 기존 state 를 반환 하도록 작성 해야 한다.
+    -   reducer 는 `현재의 state` 와 `전달 받은 action` 을 참고하여 `새로운 state` 를 만들어서 `반환` 한다. useReducer 를 사용할 때 작성하는 reducer 와 똑같은 형태를 가지고 있다.
+    -   useReducer 에서는 일반적으로 `default:` 부분에 `throw new Error('Unhandled Action')` 과 같이 에러를 발생 시키도록 처리하는게 일반적이나, `redux` 의 `reduce` 에서는 기존 state 를 반환 하도록 작성 해야 한다.
     -   redux 를 사용 할 때는 여러개의 reducer 를 만들고 이를 합쳐서 Root Reducer 를 만들 수 있다. (Root Reducer 안의 reducer 들을 sub reducer 라고 부른다.)
 
--   store (스토어)
+-   store (스토어) : `redux` 에서는 각 `Application` 당 `하나의 store` 을 만든다. store 안에는 `현재의 앱 상태`와, `reducer` 가 들어가 있고, 추가적으로 `몇가지 내장 함수`들이 있다.
 
 -   dispatch (디스패치)
 
