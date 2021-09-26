@@ -56,6 +56,6 @@
 
 -   store (스토어) : `redux` 에서는 각 `Application` 당 `하나의 store` 을 만든다. store 안에는 `현재의 앱 상태`와, `reducer` 가 들어가 있고, 추가적으로 `몇가지 내장 함수`들이 있다.
 
--   dispatch (디스패치)
+-   dispatch (디스패치) : `dispatch` 는 `store 의 내장함수 중 하나`이다. `dispatch` 는 `action 을 발생 시키는 것`으로 이해 하면 된다. `dispatch` 함수에는 `action 을 파라미터로 전달`한다. `dispatch(action)` 이런 식이다.
 
 -   subscribe (구독)
