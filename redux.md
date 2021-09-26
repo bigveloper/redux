@@ -58,4 +58,5 @@
 
 -   dispatch (디스패치) : `dispatch` 는 `store 의 내장함수 중 하나`이다. `dispatch` 는 `action 을 발생 시키는 것`으로 이해 하면 된다. `dispatch` 함수에는 `action 을 파라미터로 전달`한다. `dispatch(action)` 이런 식이다.
 
--   subscribe (구독)
+-   subscribe (구독) : subscribe 또한 store 의 내장함수 중 하나이다. subscribe 함수는, 함수 형태의 값을 파라미터로 받아온다. subscribe 함수에 특정 함수를 전달해주면, action 이 dispatch 되었을 때마다 전달해준 함수가 호출된다.
+    -   react 에서 redux 를 사용하게 될 때는 이 함수를 직접 `사용하는 일은 별로 없다`고 하지만 `react-redux라는 라이브러리`에서 제공하는 `connect 함수` 또는 `useSelector 라는 Hook` 을 사용하여 `redux store`의 `state` 에 `subscribe` 한다.
