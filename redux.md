@@ -60,3 +60,16 @@
 
 -   subscribe (구독) : subscribe 또한 store 의 내장함수 중 하나이다. subscribe 함수는, 함수 형태의 값을 파라미터로 받아온다. subscribe 함수에 특정 함수를 전달해주면, action 이 dispatch 되었을 때마다 전달해준 함수가 호출된다.
     -   react 에서 redux 를 사용하게 될 때는 이 함수를 직접 `사용하는 일은 별로 없다`고 하지만 `react-redux라는 라이브러리`에서 제공하는 `connect 함수` 또는 `useSelector 라는 Hook` 을 사용하여 `redux store`의 `state` 에 `subscribe` 한다.
+
+2. redux 모듈 만들
+
+-   react project 에 redux 를 적용하기 위해 redux 모듈을 만들어 본다.
+-   redux 모듈이란 다음 항목들이 들어있는 자바스크립트 파일을 의미한다.
+
+    -   action type
+    -   action creator function
+    -   reducer
+
+-   redux 를 사용하기 위해 위 항목들은 각각 다른 파일에 저장할 수도 있다.
+
+-   action 과 reducer를 서로 다른 파일에 정의 할 수 있다. 하지만, 이 코드들이 꼭 분리되어 있을 필요는 없다. 이 코드들이 서로 다른 directory 에, 그리고 서로 다른 파일에 분리가 되어 있으면 개발하는데 꽤나 불편하다. `action` 과 `reducer` 관련 코드들을 `하나의 파일에 몰아서 작성`할 수 있는데 이를 `Ducks pattern` 이라고 부른다. `redux 관련 코드를 분리하는 방식은 정해져 있지 않다.`
